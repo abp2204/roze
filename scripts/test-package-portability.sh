@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-# vibe-splain Clean Room Package Validator
+# vibesplain Clean Room Package Validator
 # This script simulates a user installing the package via npx/npm to catch missing dependencies.
 
 echo "📦 Starting Clean Room Package Validation..."
@@ -26,7 +26,7 @@ npm install "$TARBALL_PATH" --silent
 
 # 5. Verify the binary starts and can run a basic command
 echo "🚀 Verifying binary execution..."
-./node_modules/.bin/vibe-splain --help > /dev/null
+./node_modules/.bin/vibesplain --help > /dev/null
 
 echo "✅ SUCCESS: Package is portable and self-contained."
 
